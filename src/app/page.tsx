@@ -30,7 +30,35 @@ export default function Home() {
   and technology by applying modern software, cloud, and data-driven
   solutions to real-world scientific and research challenges.
 </p>
-      </section>
+      </section><section className="max-w-4xl mx-auto mt-16 text-center">
+  <h3 className="text-3xl font-semibold mb-4">
+    Skills
+  </h3>
+
+  <p className="text-lg">
+    AWS • Linux • Git • GitHub • Docker • Kubernetes • Python • JavaScript • React • Next.js
+  </p>
+</section>
+
+<section className="max-w-4xl mx-auto mt-16 text-center">
+  <h3 className="text-3xl font-semibold mb-4">
+    Projects
+  </h3>
+
+  <p className="text-lg">
+    Portfolio Website, DevOps Projects, Cloud Projects, Automation Projects, and Full Stack Applications.
+  </p>
+</section>
+
+<section className="max-w-4xl mx-auto mt-16 mb-16 text-center">
+  <h3 className="text-3xl font-semibold mb-4">
+    Contact
+  </h3>
+
+  <p className="text-lg">
+    GitHub: LoveAmarachiCloud
+  </p>
+</section>
     </main>
   );
 }
