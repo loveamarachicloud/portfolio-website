@@ -29,28 +29,46 @@ export default function Home() {
   Drug Discovery, and Computational Research. My goal is to bridge science
   and technology by applying modern software, cloud, and data-driven
   solutions to real-world scientific and research challenges.
-</p>
-      </section><section className="max-w-4xl mx-auto mt-16 text-center">
-  <h3 className="text-3xl font-semibold mb-4">
+</p></section>
+      <section className="max-w-5xl mx-auto mt-16 text-center">
+  <h3 className="text-3xl font-semibold mb-8">
     Skills
   </h3>
 
-  <p className="text-lg">
-    AWS • Linux • Git • GitHub • Docker • Kubernetes • Python • JavaScript • React • Next.js
-  </p>
+  <div className="grid md:grid-cols-2 gap-8 text-left">
+
+    <div>
+      <h4 className="text-xl font-bold mb-2">
+        Cloud & DevOps
+      </h4>
+      <p>AWS, Docker, Kubernetes, Linux</p>
+    </div>
+
+    <div>
+      <h4 className="text-xl font-bold mb-2">
+        Programming
+      </h4>
+      <p>Python, JavaScript, TypeScript</p>
+    </div>
+
+    <div>
+      <h4 className="text-xl font-bold mb-2">
+        Frontend
+      </h4>
+      <p>React, Next.js, HTML, CSS</p>
+    </div>
+
+        <div>
+      <h4 className="text-xl font-bold mb-2">
+        Version Control
+      </h4>
+      <p>Git, GitHub</p>
+    </div>
+
+  </div>
 </section>
 
-<section className="max-w-4xl mx-auto mt-16 text-center">
-  <h3 className="text-3xl font-semibold mb-4">
-    Projects
-  </h3>
-
-  <p className="text-lg">
-    Portfolio Website, DevOps Projects, Cloud Projects, Automation Projects, and Full Stack Applications.
-  </p>
-</section>
-
-<section className="max-w-4xl mx-auto mt-16 mb-16 text-center">
+<section className="max-w-5xl mx-auto mt-16 text-center">
   <h3 className="text-3xl font-semibold mb-4">
     Contact
   </h3>
@@ -59,6 +77,6 @@ export default function Home() {
     GitHub: LoveAmarachiCloud
   </p>
 </section>
-    </main>
+     </main>
   );
 }
