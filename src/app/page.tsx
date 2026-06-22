@@ -105,7 +105,15 @@ export default function Home() {
   </h3>
 
   <p className="text-lg mb-2">
-  GitHub: LoveAmarachiCloud
+  GitHub:
+  <a
+    href="https://github.com/loveamarachicloud"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-400 ml-2"
+  >
+    LoveAmarachiCloud
+  </a>
 </p>
 
 <p className="text-lg mb-2">
@@ -113,7 +121,15 @@ export default function Home() {
 </p>
 
 <p className="text-lg">
-  LinkedIn: linkedin.com/in/love-amarachi-onyekwere-0423bb67
+  LinkedIn:
+  <a
+    href="https://linkedin.com/in/love-amarachi-onyekwere-0423bb67"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-400 ml-2"
+  >
+    View Profile
+  </a>
 </p>
 </section>
 <footer className="mt-20 mb-6 text-center text-slate-400">
