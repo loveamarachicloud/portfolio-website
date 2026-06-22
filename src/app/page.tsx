@@ -58,14 +58,45 @@ export default function Home() {
       <p>React, Next.js, HTML, CSS</p>
     </div>
 
-        <div>
+    <div>
       <h4 className="text-xl font-bold mb-2">
         Version Control
       </h4>
       <p>Git, GitHub</p>
     </div>
+    <section className="max-w-5xl mx-auto mt-16 text-center">
+  <h3 className="text-3xl font-semibold mb-8">
+    Projects
+  </h3>
+
+  <div className="grid md:grid-cols-2 gap-8 text-left">
+
+    <div className="border border-slate-700 rounded-lg p-6">
+      <h4 className="text-xl font-bold mb-2">
+        Portfolio Website
+      </h4>
+
+      <p>
+        Personal portfolio website built with Next.js, TypeScript,
+        and Tailwind CSS to showcase my DevOps, Cloud,
+        Software Engineering, and Cheminformatics journey.
+      </p>
+    </div>
+
+    <div className="border border-slate-700 rounded-lg p-6">
+      <h4 className="text-xl font-bold mb-2">
+        AWS Cloud Projects
+      </h4>
+
+      <p>
+        Collection of hands-on AWS projects focused on cloud
+        infrastructure, deployment, automation, and security.
+      </p>
+    </div>
 
   </div>
+</section>
+</div>
 </section>
 
 <section className="max-w-5xl mx-auto mt-16 text-center">
@@ -73,10 +104,23 @@ export default function Home() {
     Contact
   </h3>
 
-  <p className="text-lg">
-    GitHub: LoveAmarachiCloud
-  </p>
+  <p className="text-lg mb-2">
+  GitHub: LoveAmarachiCloud
+</p>
+
+<p className="text-lg mb-2">
+  Email: loveamarachionyekwere@gmail.com
+</p>
+
+<p className="text-lg">
+  LinkedIn: linkedin.com/in/love-amarachi-onyekwere-0423bb67
+</p>
 </section>
+<footer className="mt-20 mb-6 text-center text-slate-400">
+  <p>
+    © 2026 Love Amarachi Onyekwere. Built with Next.js and Tailwind CSS.
+  </p>
+</footer>
      </main>
   );
 }
