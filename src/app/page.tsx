@@ -1,22 +1,31 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-white flex flex-col items-center px-6 py-10 md:px-12 lg:px-20">
+      <nav className="w-full max-w-6xl flex items-center justify-between mb-20">
+  <p className="text-xl font-bold">
+    Love Amarachi
+  </p>
+
+  <div className="hidden md:flex gap-6 text-sm text-slate-300">
+    <a href="#about" className="hover:text-white">About</a>
+    <a href="#skills" className="hover:text-white">Skills</a>
+    <a href="#projects" className="hover:text-white">Projects</a>
+    <a href="#contact" className="hover:text-white">Contact</a>
+  </div>
+</nav>
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center">
         Love Amarachi Onyekwere
       </h1>
 
       <h2 className="text-lg md:text-2xl mb-6 text-center max-w-5xl">
-  DevOps Engineer | Cloud Engineer | Full Stack Developer | Cheminformatics Researcher
+  Cloud & DevOps Engineer • Full Stack Developer • Education Technology & Research Professional
 </h2>
 
-<p className="max-w-3xl text-center text-base md:text-lg leading-8">
-  Welcome to my professional portfolio website. This website documents
-  my journey in DevOps Engineering, Cloud Computing, Software Engineering,
-  and my interdisciplinary background in Biochemistry, Chemistry of Natural
-  Bioactive Products, Cheminformatics, and Drug Discovery Research.
+<p className="max-w-3xl text-center text-base md:text-lg leading-8 text-slate-300">
+  I build cloud-ready web applications and automation solutions while applying my background in education recruitment, scientific research, and data-driven problem solving.
 </p>
 
-      <section className="max-w-3xl mt-12 text-center">
+      <section id="about" className="max-w-3xl mt-12 text-center">
         <h3 className="text-3xl font-semibold mb-4">
           About Me
         </h3>
@@ -30,7 +39,38 @@ export default function Home() {
   and technology by applying modern software, cloud, and data-driven
   solutions to real-world scientific and research challenges.
 </p></section>
-      <section className="max-w-5xl mx-auto mt-16 text-center">
+<section className="max-w-5xl mx-auto mt-16 text-center">
+  <h3 className="text-3xl font-semibold mb-8">
+    Core Focus Areas
+  </h3>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+    <div className="border border-slate-700 rounded-lg p-6">
+      <h4 className="text-xl font-bold mb-2">Cloud & DevOps</h4>
+      <p>
+        Building, deploying, and managing modern applications using cloud,
+        automation, Linux, Git, Docker, and DevOps workflows.
+      </p>
+    </div>
+
+    <div className="border border-slate-700 rounded-lg p-6">
+      <h4 className="text-xl font-bold mb-2">Education Technology</h4>
+      <p>
+        Applying my experience in international education recruitment to build
+        digital tools for student admissions, lead generation, and study abroad support.
+      </p>
+    </div>
+
+    <div className="border border-slate-700 rounded-lg p-6">
+      <h4 className="text-xl font-bold mb-2">Scientific Research</h4>
+      <p>
+        Bringing my background in Biochemistry, Chemistry of Natural Bioactive Products,
+        Cheminformatics, and Drug Discovery into data-driven research solutions.
+      </p>
+    </div>
+  </div>
+</section>
+      <section id="skills" className="max-w-5xl mx-auto mt-16 text-center">
   <h3 className="text-3xl font-semibold mb-8">
     Skills
   </h3>
@@ -58,48 +98,300 @@ export default function Home() {
       <p>React, Next.js, HTML, CSS</p>
     </div>
 
-    <div>
+        <div>
       <h4 className="text-xl font-bold mb-2">
         Version Control
       </h4>
       <p>Git, GitHub</p>
     </div>
-    <section className="max-w-5xl mx-auto mt-16 text-center">
+  </div>
+</section>
+
+<section id="projects" className="max-w-6xl mx-auto mt-16 text-center">
   <h3 className="text-3xl font-semibold mb-8">
     Projects
   </h3>
 
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+  {/* Cloud & DevOps Projects */}
+  <div className="mb-12">
+    <h4 className="text-2xl font-bold mb-6 text-left">
+  Cloud & DevOps Projects
+</h4>
 
-    <div className="border border-slate-700 rounded-lg p-6">
-      <h4 className="text-xl font-bold mb-2">
-        Portfolio Website
-      </h4>
+<div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+  <div className="border border-slate-700 rounded-lg p-6">
+    <h5 className="text-xl font-bold mb-2">
+      Portfolio Website
+    </h5>
+<div className="mb-4">
+  <span className="bg-green-600 text-white text-xs px-3 py-1 rounded-full">
+    Completed
+  </span>
+</div>
+    <p className="mb-4 text-slate-300 leading-7">
+  Designed and developed a responsive portfolio website
+  using Next.js, TypeScript, and Tailwind CSS to showcase
+  engineering, education, and scientific research projects.
+</p>
+<ul className="list-disc list-inside text-slate-300 mb-4 space-y-1">
+  <li>Built with Next.js and TypeScript</li>
+  <li>Fully responsive design</li>
+  <li>Deployed with GitHub version control</li>
+</ul>
+    <p className="text-sm text-slate-400 mb-4">
+      Next.js • TypeScript • Tailwind CSS • GitHub
+    </p>
 
-      <p>
-        Personal portfolio website built with Next.js, TypeScript,
-        and Tailwind CSS to showcase my DevOps, Cloud,
-        Software Engineering, and Cheminformatics journey.
-      </p>
+    <div className="flex gap-3">
+      <a
+        href="https://github.com/loveamarachicloud/portfolio-website"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700"
+      >
+        GitHub
+      </a>
+
+      <a
+        href="#"
+        className="border border-slate-600 px-4 py-2 rounded hover:bg-slate-800"
+      >
+        Live Demo
+      </a>
     </div>
+  </div>
 
-    <div className="border border-slate-700 rounded-lg p-6">
-      <h4 className="text-xl font-bold mb-2">
-        AWS Cloud Projects
-      </h4>
+  <div className="border border-slate-700 rounded-lg p-6 flex flex-col justify-between">
+  <h5 className="text-2xl font-bold mb-3">
+  AWS Cloud Infrastructure Lab
+</h5>
+<div className="mb-4">
+  <span className="bg-green-600 text-white text-xs px-3 py-1 rounded-full">
+    Completed
+  </span>
+</div>
+<p className="mb-4 text-slate-300 leading-7">
+  Provisioned and managed an AWS EC2 Linux server for DevOps
+  learning and cloud infrastructure administration. Configured
+  security settings, monitored instance health, and practiced
+  deployment and system management workflows.
+</p>
+<ul className="list-disc list-inside text-slate-300 mb-4 space-y-1">
+  <li>Launched and configured AWS EC2 instance</li>
+  <li>Managed Linux server environment</li>
+  <li>Configured security and access controls</li>
+  <li>Monitored infrastructure health and availability</li>
+</ul>
+  <p className="text-sm text-slate-400 mb-4">
+    AWS • Linux • Docker • Git
+  </p>
 
-      <p>
-        Collection of hands-on AWS projects focused on cloud
-        infrastructure, deployment, automation, and security.
-      </p>
+  <div className="flex gap-3">
+    <a
+      href="https://github.com/loveamarachicloud"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700"
+    >
+      GitHub
+    </a>
+
+    <a
+      href="#"
+      className="border border-slate-600 px-4 py-2 rounded hover:bg-slate-800"
+    >
+      Demo
+    </a>
+  </div>
+</div>
+</div>
+  </div>
+
+  {/* Education Technology Projects */}
+  <div className="mb-12">
+    <h4 className="text-2xl font-bold mb-6 text-left">
+      Education Technology Projects
+    </h4>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+      <div className="border border-slate-700 rounded-lg p-6 flex flex-col justify-between">
+        <h5 className="text-xl font-bold mb-2">
+          Global Education Website
+        </h5>
+<div className="mb-4">
+  <span className="bg-yellow-600 text-white text-xs px-3 py-1 rounded-full">
+    In Development
+  </span>
+</div>
+        <p className="mb-4">
+          Platform designed to support international student
+          recruitment and study-abroad services.
+        </p>
+<ul className="list-disc list-inside text-slate-300 mb-4 space-y-1">
+  <li>International student recruitment platform</li>
+  <li>Study abroad application workflows</li>
+  <li>Lead capture and inquiry management</li>
+</ul>
+        <p className="text-sm text-slate-400 mb-4">
+  Next.js • Education Recruitment • CRM
+</p>
+
+<div className="flex gap-3">
+  <a
+    href="https://github.com/loveamarachicloud"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700"
+  >
+    GitHub
+  </a>
+
+  <a
+    href="#"
+    className="border border-slate-600 px-4 py-2 rounded hover:bg-slate-800"
+  >
+    Demo
+  </a>
+</div>
+      </div>
+
+      <div className="border border-slate-700 rounded-lg p-6 flex flex-col justify-between">
+        <h5 className="text-xl font-bold mb-2">
+          AI Student Lead Generation System
+        </h5>
+<div className="mb-4">
+  <span className="bg-purple-600 text-white text-xs px-3 py-1 rounded-full">
+    Planned
+  </span>
+</div>
+        <p className="mb-4">
+          AI-powered qualification and lead management system
+          for international student recruitment.
+        </p>
+<ul className="list-disc list-inside text-slate-300 mb-4 space-y-1">
+  <li>Automated lead qualification</li>
+  <li>AI-powered student screening</li>
+  <li>CRM integration planning</li>
+</ul>
+        <p className="text-sm text-slate-400 mb-4">
+  AI • Automation • CRM • Lead Scoring
+</p>
+
+<div className="flex gap-3">
+  <a
+    href="https://github.com/loveamarachicloud"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700"
+  >
+    GitHub
+  </a>
+
+  <a
+    href="#"
+    className="border border-slate-600 px-4 py-2 rounded hover:bg-slate-800"
+  >
+    Demo
+  </a>
+</div>
+      </div>
     </div>
+  </div>
 
+  {/* Research & Scientific Computing Projects */}
+  <div>
+    <h4 className="text-2xl font-bold mb-6 text-left">
+      Research & Scientific Computing
+    </h4>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+      <div className="border border-slate-700 rounded-lg p-6 flex flex-col justify-between">
+        <h5 className="text-xl font-bold mb-2">
+          Cheminformatics Research Projects
+        </h5>
+<div className="mb-4">
+  <span className="bg-green-600 text-white text-xs px-3 py-1 rounded-full">
+    Research
+  </span>
+</div>
+        <p className="mb-4">
+          Computational approaches for chemical data analysis,
+          bioactive compounds, and molecular research.
+        </p>
+<ul className="list-disc list-inside text-slate-300 mb-4 space-y-1">
+  <li>Chemical data analysis</li>
+  <li>Bioactive compound research</li>
+  <li>Computational chemistry workflows</li>
+</ul>
+        <p className="text-sm text-slate-400 mb-4">
+  Cheminformatics • Data Analysis • Research
+</p>
+
+<div className="flex gap-3">
+  <a
+    href="https://github.com/loveamarachicloud"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700"
+  >
+    GitHub
+  </a>
+
+  <a
+    href="#"
+    className="border border-slate-600 px-4 py-2 rounded hover:bg-slate-800"
+  >
+    Demo
+  </a>
+</div>
+      </div>
+
+      <div className="border border-slate-700 rounded-lg p-6 flex flex-col justify-between">
+        <h5 className="text-xl font-bold mb-2">
+          Drug Discovery Analytics
+        </h5>
+<div className="mb-4">
+  <span className="bg-blue-600 text-white text-xs px-3 py-1 rounded-full">
+    Research
+  </span>
+</div>
+        <p className="mb-4">
+          Research-driven exploration of computational methods
+          used in modern drug discovery workflows.
+        </p>
+<ul className="list-disc list-inside text-slate-300 mb-4 space-y-1">
+  <li>Drug discovery data exploration</li>
+  <li>Molecular property analysis</li>
+  <li>Research-driven computational methods</li>
+</ul>
+        <p className="text-sm text-slate-400 mb-4">
+  Drug Discovery • Data Science • Research
+</p>
+
+<div className="flex gap-3">
+  <a
+    href="https://github.com/loveamarachicloud"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700"
+  >
+    GitHub
+  </a>
+
+  <a
+    href="#"
+    className="border border-slate-600 px-4 py-2 rounded hover:bg-slate-800"
+  >
+    Demo
+  </a>
+</div>
+      </div>
+    </div>
   </div>
 </section>
-</div>
-</section>
 
-<section className="max-w-5xl mx-auto mt-16 text-center">
+
+<section id="contact" className="max-w-5xl mx-auto mt-16 text-center">
   <h3 className="text-3xl font-semibold mb-4">
     Contact
   </h3>
