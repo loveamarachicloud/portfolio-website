@@ -1,15 +1,15 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-950 text-white flex flex-col items-center justify-center px-6">
-      <h1 className="text-5xl font-bold mb-6">
+    <main className="min-h-screen bg-slate-950 text-white flex flex-col items-center px-6 py-10 md:px-12 lg:px-20">
+      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center">
         Love Amarachi Onyekwere
       </h1>
 
-      <h2 className="text-2xl mb-6 text-center">
+      <h2 className="text-lg md:text-2xl mb-6 text-center max-w-5xl">
   DevOps Engineer | Cloud Engineer | Full Stack Developer | Cheminformatics Researcher
 </h2>
 
-<p className="max-w-3xl text-center text-lg leading-8">
+<p className="max-w-3xl text-center text-base md:text-lg leading-8">
   Welcome to my professional portfolio website. This website documents
   my journey in DevOps Engineering, Cloud Computing, Software Engineering,
   and my interdisciplinary background in Biochemistry, Chemistry of Natural
@@ -21,7 +21,7 @@ export default function Home() {
           About Me
         </h3>
 
-        <p className="text-lg leading-8">
+        <p className="text-base md:text-lg leading-8">
   I am Love Amarachi Onyekwere, a technology professional passionate
   about DevOps Engineering, Cloud Computing, and Software Engineering.
   I hold a B.Sc. in Biochemistry and a Master's degree in Chemistry of
@@ -35,7 +35,7 @@ export default function Home() {
     Skills
   </h3>
 
-  <div className="grid md:grid-cols-2 gap-8 text-left">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
 
     <div>
       <h4 className="text-xl font-bold mb-2">
@@ -69,7 +69,7 @@ export default function Home() {
     Projects
   </h3>
 
-  <div className="grid md:grid-cols-2 gap-8 text-left">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
 
     <div className="border border-slate-700 rounded-lg p-6">
       <h4 className="text-xl font-bold mb-2">
