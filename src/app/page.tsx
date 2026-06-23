@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-white flex flex-col items-center px-6 py-10 md:px-12 lg:px-20">
-      <nav className="w-full max-w-6xl flex items-center justify-between mb-20">
+      <nav className="w-full max-w-6xl flex items-center justify-between mb-10">
   <p className="text-xl font-bold">
     Love Amarachi
   </p>
@@ -13,6 +13,11 @@ export default function Home() {
     <a href="#contact" className="hover:text-white">Contact</a>
   </div>
 </nav>
+<img
+  src="/profile.jpeg"
+  alt="Love Amarachi Onyekwere"
+  className="w-40 h-40 rounded-full mx-auto mb-6 object-cover border-4 border-blue-500"
+/>
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center">
         Love Amarachi Onyekwere
       </h1>
@@ -24,7 +29,22 @@ export default function Home() {
 <p className="max-w-3xl text-center text-base md:text-lg leading-8 text-slate-300">
   I build cloud-ready web applications and automation solutions while applying my background in education recruitment, scientific research, and data-driven problem solving.
 </p>
+<div className="flex flex-col md:flex-row gap-4 mt-8">
+  <a
+    href="#projects"
+    className="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700"
+  >
+    View Projects
+  </a>
 
+  <a
+    href="/Love-Amarachi-Onyekwere-CV.pdf"
+    target="_blank"
+    className="border border-slate-600 px-6 py-3 rounded-lg hover:bg-slate-800"
+  >
+    Download CV
+  </a>
+</div>
       <section id="about" className="max-w-3xl mt-12 text-center">
         <h3 className="text-3xl font-semibold mb-4">
           About Me
@@ -70,6 +90,89 @@ export default function Home() {
     </div>
   </div>
 </section>
+<section className="max-w-5xl mx-auto mt-16">
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+
+    <div className="border border-slate-700 rounded-lg p-6">
+      <h3 className="text-3xl font-bold text-blue-400">
+        10+
+      </h3>
+      <p className="mt-2 text-slate-300">
+        Projects Delivered
+      </p>
+    </div>
+
+    <div className="border border-slate-700 rounded-lg p-6">
+      <h3 className="text-3xl font-bold text-blue-400">
+  AWS
+</h3>
+<p className="mt-2 text-slate-300">
+  Cloud & DevOps
+</p>
+    </div>
+
+    <div className="border border-slate-700 rounded-lg p-6">
+      <h3 className="text-3xl font-bold text-blue-400">
+  3
+</h3>
+<p className="mt-2 text-slate-300">
+  Industry Domains
+</p>
+    </div>
+
+    <div className="border border-slate-700 rounded-lg p-6">
+      <h3 className="text-3xl font-bold text-blue-400">
+  MSc
+</h3>
+<p className="mt-2 text-slate-300">
+  Research Expertise
+</p>
+    </div>
+
+  </div>
+</section>
+<section className="max-w-6xl mx-auto mt-16 text-center">
+  <h3 className="text-3xl font-semibold mb-8">
+    Current Learning
+  </h3>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+
+    <div className="border border-slate-700 rounded-lg p-6">
+      <h4 className="text-xl font-bold mb-2">
+        AWS Cloud Engineering
+      </h4>
+
+      <p className="text-slate-300">
+        Building hands-on cloud infrastructure projects using AWS,
+        Linux, networking, security, and deployment practices.
+      </p>
+    </div>
+
+    <div className="border border-slate-700 rounded-lg p-6">
+      <h4 className="text-xl font-bold mb-2">
+        DevOps & Automation
+      </h4>
+
+      <p className="text-slate-300">
+        Developing skills in Git, Docker, CI/CD workflows,
+        infrastructure automation, and cloud operations.
+      </p>
+    </div>
+
+    <div className="border border-slate-700 rounded-lg p-6">
+      <h4 className="text-xl font-bold mb-2">
+        Full Stack Development
+      </h4>
+
+      <p className="text-slate-300">
+        Building responsive web applications with Next.js,
+        TypeScript, React, and Tailwind CSS.
+      </p>
+    </div>
+
+  </div>
+</section>
       <section id="skills" className="max-w-5xl mx-auto mt-16 text-center">
   <h3 className="text-3xl font-semibold mb-8">
     Skills
@@ -92,21 +195,75 @@ export default function Home() {
     </div>
 
     <div>
-      <h4 className="text-xl font-bold mb-2">
-        Frontend
-      </h4>
-      <p>React, Next.js, HTML, CSS</p>
+  <h4 className="text-xl font-bold mb-2">
+    Frontend Development
+  </h4>
+      <p>
+  Next.js, React, TypeScript,
+  Tailwind CSS, HTML5, CSS3,
+  Responsive Design
+</p>
     </div>
 
         <div>
-      <h4 className="text-xl font-bold mb-2">
-        Version Control
-      </h4>
-      <p>Git, GitHub</p>
-    </div>
+  <h4 className="text-xl font-bold mb-2">
+    Research & Data
+  </h4>
+
+  <p>
+    Cheminformatics, Drug Discovery Research,
+    Scientific Documentation, Data Analysis
+  </p>
+</div>
   </div>
 </section>
+<section id="experience" className="max-w-6xl mx-auto mt-16">
+  <h3 className="text-3xl font-semibold mb-8 text-center">
+    Professional Experience
+  </h3>
 
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+    <div className="border border-slate-700 rounded-lg p-6">
+      <h4 className="text-xl font-bold mb-2">
+        Education Recruitment Consultant
+      </h4>
+
+      <p className="text-slate-400 mb-4">
+        Global Education Agency
+      </p>
+<p className="text-sm text-blue-400 mb-4">
+  Education Recruitment • Admissions • CRM • Business Development
+</p>
+      <ul className="list-disc list-inside text-slate-300 space-y-2">
+        <li>Supported international student recruitment and admissions processes.</li>
+        <li>Guided students through university application workflows.</li>
+        <li>Managed client relationships and student engagement activities.</li>
+        <li>Contributed to business development and lead generation initiatives.</li>
+      </ul>
+    </div>
+
+    <div className="border border-slate-700 rounded-lg p-6">
+      <h4 className="text-xl font-bold mb-2">
+        Research Scientist
+      </h4>
+
+      <p className="text-slate-400 mb-4">
+        Biochemistry & Cheminformatics Research
+      </p>
+<p className="text-sm text-green-400 mb-4">
+  Research • Cheminformatics • Drug Discovery • Data Analysis
+</p>
+      <ul className="list-disc list-inside text-slate-300 space-y-2">
+        <li>Conducted scientific research in natural bioactive products.</li>
+        <li>Applied computational approaches to chemical and biological data.</li>
+        <li>Worked on drug discovery and cheminformatics research projects.</li>
+        <li>Produced research findings and technical documentation.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
 <section id="projects" className="max-w-6xl mx-auto mt-16 text-center">
   <h3 className="text-3xl font-semibold mb-8">
     Projects
